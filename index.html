@@ -4,45 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Puppies Page</title>
-    <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet" href="./bootstrap-5.3.8-dist (1)/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="style.css" /> -->
   </head>
 
-  <body>
+   <body class="bg-w-darkhite text">
   
-    <header class="header">
-      <h1>Puppies Page</h1>
+    <!-- Header -->
+    <header class="text-white text-center p-4" style="background-color: #4f4cff;">
+      <h1 class="fs-3 fw-bold ">Puppies Page</h1>
     </header>
-    <section class="hero-section">
-      <img src="images/banner-puppies.jpg" alt="Puppies in a basket" />
-    </section> 
-    <div class="page-wrapper">
-      <main class="content-container">
-        <div class="three-box">
-          <div class="card">
-            <img src="images/puppy-1.jpg" alt="White Puppy" />
+    
+    <section class="w-100">
+             <img src="images/banner-puppies.jpg" alt="Puppies in a basket" class="w-100 d-block" />
+    </section>
+
+    <!-- Main Container -->
+    <div class="container-xl p-0">
+      <main class="p-4">
+        
+        <!-- Top Row (3 Boxes) -->
+        <div class="row g-3 mb-3">
+          <div class="col-12 col-md-4">
+            <div class="ratio ratio-1x1">
+              <img src="images/puppy-1.jpg" alt="White Puppy" class=" rounded" />
+            </div>
           </div>
-          <div class="card missing-card">
-            <p>Puppy missing here!!</p>
-          </div>
-          <div class="card">
-            <img src="images/puppy-2.jpg" alt="Dark Puppy" />
+          
+          <!-- Hidden on small screens, visible from md (768px) up -->
+         <div class="col-12 col-md-4 d-none d-md-block">
+  <div class="ratio ratio-1x1 bg-danger text-white rounded">
+    <div class="d-flex align-items-center justify-content-center text-center p-3">
+      <p class="fs-5 fw-bold m-0">Puppy missing here!!</p>
+    </div>
+  </div>
+</div>
+
+          <div class="col-12 col-md-4">
+            <div class="ratio ratio-1x1">
+              <img src="images/puppy-2.jpg" alt="Dark Puppy" class=" rounded" />
+            </div>
           </div>
         </div>
-        <div class="section-title">
-          <h2>More Puppies</h2>
+
+        <!-- Section Title -->
+        <div class="text-center py-2 my-2">
+          <h2 class="fs-4">More Puppies</h2>
         </div>
-        <div class="two-puppys">
-          <div class="card">
-            <img src="images/puppy-3.jpg" alt="Brown Puppy" />
+
+        <!-- Bottom Row (2 Boxes) -->
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <div class="ratio ratio-1x1">
+              <img src="images/puppy-3.jpg" alt="Brown Puppy" class="rounded" />
+            </div>
           </div>
-          <div class="card">
-            <img src="images/puppy-4.jpg" alt="Fluffy Puppy" />
+          <div class="col-12 col-md-6">
+            <div class="ratio ratio-1x1">
+              <img src="images/puppy-4.jpg" alt="Fluffy Puppy" class="rounded" />
+            </div>
           </div>
         </div>
+
       </main>
     </div>
-    <footer class="footer">
-      <p>Developed by: Seada</p>
+
+    <!-- Footer -->
+    <footer class="text-white text-center p-5" style="background-color: #4f4cff;">
+      <p class="m-0">Developed by: Seada</p>
     </footer>
+
   </body>
 </html>
